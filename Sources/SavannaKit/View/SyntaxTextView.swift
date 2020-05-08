@@ -225,6 +225,9 @@ open class SyntaxTextView: View {
 				}
 
 			}
+        
+            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillDisappear), name: UIResponder.keyboardWillHideNotification, object: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillAppear), name: UIResponder.keyboardWillShowNotification, object: nil)
 			
 		#endif
 		
@@ -316,6 +319,10 @@ open class SyntaxTextView: View {
 		}
 
 	}
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
 	
 	#if os(iOS)
 
@@ -330,7 +337,43 @@ open class SyntaxTextView: View {
 		self.textView.setNeedsDisplay()
 
 	}
-	
+    
+    @objc func keyboardWillAppear(_ notification: NSNotification) {
+        
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            let insets = UIEdgeInsets(top: 0, left: 0, bottom: keyboardSize.height, right: 0)
+            contentInset = insets
+            
+//            DispatchQueue.main.async {
+//                let testView = UIView(frame: keyboardSize)
+//                testView.tag = 700
+//                print(keyboardSize)
+//                testView.backgroundColor = UIColor.green
+//                testView.translatesAutoresizingMaskIntoConstraints = false
+//
+//                self.addSubview(testView)
+//                testView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+//                testView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+//                let heightConstraint = NSLayoutConstraint(item: testView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: keyboardSize.height)
+//                let widthConstraint = NSLayoutConstraint(item: testView, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: keyboardSize.width)
+//                testView.addConstraints([heightConstraint, widthConstraint])
+//            }
+            
+            layoutIfNeeded()
+        }
+    }
+    
+    @objc func keyboardWillDisappear(_ notification: NSNotification) {
+        
+        if let _ = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            contentInset = UIEdgeInsets.zero
+            
+//            if let testView = viewWithTag(700) {
+//                testView.removeFromSuperview()
+//            }
+        }
+    }
+    
 	#endif
 
 	public var theme: SyntaxColorTheme? {
