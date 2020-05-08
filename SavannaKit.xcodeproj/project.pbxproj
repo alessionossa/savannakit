@@ -383,17 +383,19 @@
 					};
 					BEDA3F341E380E5D00B5091C = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 6G5LMQ72D8;
+						DevelopmentTeam = NK42ZNZZG9;
+						LastSwiftMigration = 1140;
 						ProvisioningStyle = Manual;
 					};
 					BEE6D386209A312400E881D9 = {
 						CreatedOnToolsVersion = 9.3;
-						DevelopmentTeam = 6G5LMQ72D8;
+						DevelopmentTeam = NK42ZNZZG9;
 						ProvisioningStyle = Automatic;
 					};
 					BEF8B63F20B88780006B85E9 = {
 						CreatedOnToolsVersion = 9.3.1;
-						DevelopmentTeam = 6G5LMQ72D8;
+						DevelopmentTeam = NK42ZNZZG9;
+						LastSwiftMigration = 1140;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -403,6 +405,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -571,7 +574,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_BUNDLE_IDENTIFIER = be.silverfox.savannakit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nossa.silverfox.savannakit;
 				PRODUCT_MODULE_NAME = SavannaKit;
 				PRODUCT_NAME = SavannaKit;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -600,7 +603,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_BUNDLE_IDENTIFIER = be.silverfox.savannakit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nossa.silverfox.savannakit;
 				PRODUCT_MODULE_NAME = SavannaKit;
 				PRODUCT_NAME = SavannaKit;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -736,7 +739,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 6G5LMQ72D8;
+				DEVELOPMENT_TEAM = NK42ZNZZG9;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -748,12 +751,12 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = be.silverfox.savannakit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nossa.silverfox.savannakit;
 				PRODUCT_MODULE_NAME = SavannaKit;
 				PRODUCT_NAME = SavannaKit;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -763,7 +766,7 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 6G5LMQ72D8;
+				DEVELOPMENT_TEAM = NK42ZNZZG9;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -775,12 +778,12 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = be.silverfox.savannakit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nossa.silverfox.savannakit;
 				PRODUCT_MODULE_NAME = SavannaKit;
 				PRODUCT_NAME = SavannaKit;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -794,7 +797,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 6G5LMQ72D8;
+				DEVELOPMENT_TEAM = NK42ZNZZG9;
 				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = SavannaKitTests/Info.plist;
@@ -817,7 +820,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 6G5LMQ72D8;
+				DEVELOPMENT_TEAM = NK42ZNZZG9;
 				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = SavannaKitTests/Info.plist;
@@ -841,14 +844,14 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6G5LMQ72D8;
+				DEVELOPMENT_TEAM = NK42ZNZZG9;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "iOS Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "be.silverfox.savannakit.iOS-Example";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nossa.silverfox.savannakit.iOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -869,9 +872,9 @@
 				INFOPLIST_FILE = "iOS Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "be.silverfox.savannakit.iOS-Example";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nossa.silverfox.savannakit.iOS-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
