@@ -310,7 +310,8 @@ open class SyntaxTextView: View {
 		
 		if shouldChangeText(insertingText: text) {
 			
-			contentTextView.insertText(text)
+            // Error: 'insertText' was deprecated in macOS 10.11: Use -insertText:replacementRange: from NSTextInputClient instead. Since the method is designed to be used solely by the input system, the message should never be sent to a text view from applications. Any content modifications should be via either NSTextStorage or NSText methods.
+            contentTextView.insertText(text)
 			
 		}
 

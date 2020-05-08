@@ -379,6 +379,7 @@
 				TargetAttributes = {
 					BE15626D1EFE9E7C00EB3723 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 1140;
 						ProvisioningStyle = Manual;
 					};
 					BEDA3F341E380E5D00B5091C = {
@@ -579,7 +580,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -608,7 +609,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
